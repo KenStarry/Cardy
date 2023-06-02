@@ -1,7 +1,6 @@
 class NavConstants {
 
   /// Routes
-  static const String initialRoute = '/';
   static const String mainRoute = '/main_screen';
 
   /// Bottom Navigation Routes

@@ -1,3 +1,4 @@
+import 'package:cardy/features/feature_home/presentation/home_screen.dart';
 import 'package:cardy/features/feature_main/presentation/main_screen.dart';
 import 'package:cardy/navigation/nav_constants.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: NavConstants.initialRoute,
+      initialRoute: NavConstants.mainRoute,
       getPages: [
         GetPage(name: NavConstants.mainRoute, page: () => const MainScreen()),
+        GetPage(name: NavConstants.homeRoute, page: () => const HomeScreen())
       ],
     );
   }
