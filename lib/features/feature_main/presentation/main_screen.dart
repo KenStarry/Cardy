@@ -12,7 +12,9 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Cardy"),
+        title: Text("Cardy", style: Theme.of(context).textTheme.titleLarge,),
+        elevation: 0,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
     );
   }
