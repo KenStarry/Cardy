@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
+      debugShowCheckedModeBanner: false,
       initialRoute: NavConstants.mainRoute,
       getPages: [
         GetPage(name: NavConstants.mainRoute, page: () => const MainScreen()),
